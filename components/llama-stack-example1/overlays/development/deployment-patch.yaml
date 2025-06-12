@@ -12,5 +12,5 @@ spec:
   template:
     spec:
       containers:
-        - image: quay.io/tpetkos/llama-stack-example1:d4bea794cf21c3899cb5c28f95e133214128b195@sha256:1ce8d97d9d5a2bc48dacf13171d8eb414302e3fd579731d67d65aac21f4cf4a5 # use pre-built to bootstrap
+        - image: quay.io/tpetkos/llama-stack-example1:e7427cfd9f088d88463c48c603ebd235b7c7d5fb@sha256:831fab18a5102876d0b26e8ed82ba48e8332fa0e7b4d12723fcf979da19f5de6 # use pre-built to bootstrap
           name: app-inference
