@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: llama-stack-example1-repository
+spec:
+  url: https://github.com/fpetk-rolling-demo/llama-stack-example1

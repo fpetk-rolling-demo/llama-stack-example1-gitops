@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: llama-stack-example1-gitops
+  description: This is GitOps manifest for llama-stack-example1   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:
+    # ArgoCD apps from this template used rhtap-gitops as the grouping
+    argocd/app-selector: rhtap/gitops=llama-stack-example1
+    janus-idp.io/tekton: llama-stack-example1 
+    backstage.io/kubernetes-id: llama-stack-example1 
+    backstage.io/techdocs-ref: dir:. 
+spec:
+  type: gitops
+  owner: user:default/tpetkos 
+  lifecycle: experimental
+  dependsOn:
+    - component:llama-stack-example1  
